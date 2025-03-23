@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>自行车介绍</title>
+  <style>
+    /* 基础样式 */
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    .page {
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      left: 100vw;
+      transition: transform 0.8s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: #f4f4f4;
+    }
+
+    .page.active {
+      transform: translateX(-100vw);
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      max-width: 90%;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    img {
+      max-width: 80%;
+      height: auto;
+      margin-top: 20px;
+    }
+
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80%;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .timeline-item {
+      margin: 20px 0;
+      border-left: 3px solid #333;
+      padding-left: 20px;
+    }
+
+    .timeline-item img {
+      max-width: 200px;
+      margin-top: 10px;
+    }
+
+    .nav-buttons {
+      position: fixed;
+      bottom: 20px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .nav-buttons button {
+      background-color: #333;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .nav-buttons button:disabled {
+      background-color: gray;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+  <!-- 第一页：封面 -->
+  <div class="page" id="page-1">
+    <div class="container">
+      <h1>自行车的简介</h1>
+      <p>自行车，又称脚踏车或单车，通常是二轮的小型陆上车辆。人骑上车后，以脚踩踏板为动力，是绿色环保的交通工具。英文bicycle。其中“bi”意指二，而“cycle”意指轮，即两轮车。在中国内地、台湾、新加坡，通常称其为“自行车”或“脚踏车”；在港澳则通常称其为“单车”（其实粤语通常都这么称呼）；而在日本称为“自転（转）车”。自行车种类很多，有单人自行车，双人自行车还有多人自行车。</p>
+      <p>可以作为环保的交通工具用来代步、出行；越来越多的人将自行车作为健身器材用来骑行锻炼、自行车出游；自行车本身也是一项体育竞技运动，有公路自行车赛、山地自行车赛、场地自行车赛、特技自行车比赛等。</p>
+    </div>
+  </div>
+
+  <!-- 第二页：自行车历史 -->
+  <div class="page" id="page-2">
+    <div class="container">
+      <h1>自行车的历史</h1>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>1817年 - 德莱斯木马车</h3>
+          <p>由德国人卡尔·冯·德莱斯发明，被认为是自行车的前身。</p>
+          <img src="https://img0.baidu.com/it/u=3434816400,3986668688&fm=253&fmt=auto&app=138&f=JPEG?w=667&h=500" alt="德莱斯木马车">
+        </div>
+        <div class="timeline-item">
+          <h3>1860年 - 脚踏车的出现</h3>
+          <p>法国人皮埃尔·米肖改进了设计，增加了脚踏板。</p>
+        </div>
+        <div class="timeline-item">
+          <h3>1870年 - 高轮自行车</h3>
+          <p>高轮自行车风靡一时，但不够安全。</p>
+          <img src="https://t9.baidu.com/it/u=3882746013,1095429314&fm=193" alt="高轮自行车">
+        </div>
+        <div class="timeline-item">
+          <h3>1885年 - 现代自行车雏形</h3>
+          <p>英国的约翰·凯姆发明了带链条传动的安全自行车。</p>
+          <img src="https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2021%2F0809%2Fd296ddbdj00qxjupi002pc000k300rsg.jpg&thumbnail=660x2147483647&quality=80&type=jpg" alt="安全自行车">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 第三页：自行车类型 -->
+  <div class="page" id="page-3">
+    <div class="container">
+      <h1>自行车的类型</h1>
+      <div>
+        <h3>公路自行车</h3>
+        <p>‌公路自行车是为在公路上骑行而设计的自行车，具有快速舒适地长距离骑行的特点。‌其主要特征包括细胎和弯把，这些设计有助于减少风阻并提高骑行速度。公路自行车不仅用于比赛，还逐渐被人们用于有氧运动。‌
+</p>
+        <img src="https://5b0988e595225.cdn.sohucs.com/images/20191026/1f6daf483aea414b9074290a94abaa2f.jpeg" alt="公路自行车">
+      </div>
+   </div>
+</div>
+  <div class="page" id="page-4">
+    <div class="container">
+      <h1>自行车的类型</h1>
+      <div>
+        <h3>山地自行车</h3>
+        <p>‌山地自行车（Mountain Bike，简称MTB）是一种专为复杂地形设计的自行车，具有坚固的车架、宽厚的轮胎、强力的避震系统和多速变速装置，能够在各种崎岖的自然环境中稳定行驶。‌山地自行车起源于美国，由美国加利福尼亚大学的学生斯科特将普通自行车改装而成。1991年，美国旧金山首次举行了山地自行车世界杯赛，1996年成为奥运会的正式比赛项目。‌
+</p>
+        <img src="https://img0.baidu.com/it/u=3744685846,3271959892&fm=253&fmt=auto&app=138&f=JPEG?w=1067&h=800" alt="山地自行车">
+      </div>
+   </div>
+</div>
+<div class="page" id="page-5">
+    <div class="container">
+      <h1>自行车的类型</h1>
+      <div>
+        <h3>城市自行车</h3>
+        <p> 城市自行车，是为生活在城市的居民而设计，缓解一定的城市交通压力，同时满足人们日常生活的出行需求的自行车。</p>
+        <img src="https://img1.baidu.com/it/u=390384187,2244254013&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500" alt="城市自行车">
+      </div>
+   </div>
+</div>
+  <!-- 第四页：自行车比赛 -->
+  <div class="page" id="page-6">
+    <div class="container">
+      <h1>自行车比赛</h1>
+      <div>
+        <h3>环法自行车赛</h3>
+        <p>环法自行车（Tour de France），每年在法国及周边国家举行的多赛段公路自行车赛。</p>
+        <p>1903年，首届环法自行车赛在法国举行。20世纪50年代，随着环法赛事影响力扩大，来自美洲、大洋洲和俄罗斯的选手也开始在环法赛场上崭露头角。20世纪50年代末至90年代，雅克·安奎蒂尔、贝尔纳·希诺、艾迪·莫克斯、米格尔·安杜兰等车手先后统治环法赛事。 20世纪90年末至21世纪初，环法赛事频繁陷入禁药丑闻，多名车手和车队因服用禁药而被禁赛。2013年，环法七冠王兰斯·阿姆斯特朗因为承认服用过兴奋剂，而导致自己的所有冠军头衔被剥夺，并且处以被终身禁赛。2014年，第101届环法自行车赛上，中国车手计成获得了第164名，成为首位完成环法赛事的中国车手。2024年6月29日，环法自行车赛从意大利佛罗伦萨发车，7月21日在法国蔚蓝海岸的尼斯收官。最终来自阿联酋航空车队的斯洛文尼亚车手塔代伊·波加查赢得总冠军。</p>
+        <p>环法自行车赛一般从每年七月初开始，到七月底结束，历时三周，中间一般有两个休息日。截至2024年，雅克·安奎蒂尔、贝尔纳·希诺、艾迪·莫克斯、米格尔·安杜兰以5次车手总冠军并列环法历史之最。</p>
+        <img src="https://img0.baidu.com/it/u=470637104,2428473495&fm=253&fmt=auto&app=120&f=JPEG?w=750&h=500" alt="环法自行车赛">
+      </div>
+    </div>
+  </div>
+<div class="page" id="page-7">
+    <div class="container">
+      <h1>环法自行车赛著名车手</h1>
+      <div>
+        <h3>波加查</h3>
+        <p>塔代伊·波加查（Tadej Pogacar），1998年9月21日出生，斯洛文尼亚自行车运动员，效力于阿联酋航空车队。</p>
+        <p>2019年，在环澳赛中塔代伊·波加查完成了阿联酋航空车队的首秀，并获得了第13名。2020年9月21日，塔代伊·波加查夺得2020环法自行车赛总冠军，他由此成为自1904年以来最年轻的环法自行车赛冠军。2021年7月19日，波加查第二次获得环法总冠军。2023年7月23日，波加查获得环法自行车赛亚军。7月30日，格拉斯哥自行车世锦赛公路大组赛项目中获得铜牌。</p>
+        <p>2024年5月26日，阿联酋航空车队的塔代伊·波加查夺得2024年环意大利自行车赛的总冠军。7月，斯洛文尼亚自行车联合会确认，塔代伊·波加查因疲劳原因退出2024年巴黎奥运会，波加查原计划出战巴黎奥运会公路自行车大组赛的比赛。</p>
+        <img src="https://static.wildto.com/news/20246/1721584378230" alt="环法自行车赛">
+        <img src="https://img0.baidu.com/it/u=3425480427,352674003&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=999" alt="环法自行车赛">
+      </div>
+    </div>
+  </div>
+  <div class="page" id="page-8">
+    <div class="container">
+      <div>
+        <h3>山地自行车速降比赛</h3>
+        <p>‌山地自行车速降比赛（Downhill Mountain Biking）‌是一种在山地赛道上进行的速度竞赛运动，要求运动员在特定的赛道上以最快的速度骑行。这种比赛通常在崎岖的山地轨道上进行，运动员需要克服各种不同的地形，如陡峭的上坡、急转弯、跳跃和颠簸路段‌。</p>
+        <p>山地速降自行车赛通常由单人发车，比赛过程中没有爬坡或上坡路段，完全依靠重力驱动。比赛路线由单人道、跳跃、慢地段、田野、森林道和砾石道混合组成，采用个人计时赛的方式，以成绩优劣排列名次‌。运动员需要具备高超的骑技和对自行车的控制能力，迅速做出决策和反应，保持平衡，极速穿越赛道‌。</p>
+        <p>山地速降自行车赛在全球范围内越来越受欢迎，成为一项重要的自行车运动项目。赛事通常由专业的自行车运动协会主办，如中国自行车运动协会等。近年来，国内外的山地速降比赛频繁举办，推动了这项运动的发展和普及‌。</p>
+        <img src="https://img2.baidu.com/it/u=2338585133,868620428&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=667" alt="山地自行车比赛">
+        <img src="https://img0.baidu.com/it/u=1549521106,1950531357&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500" alt="山地自行车比赛">
+      </div>
+    </div>
+  </div>
+  <div class="page" id="page-9">
+    <div class="container">
+      <div>
+        <h3>铁人三项</h3>
+        <p>铁人三项（Triathlon）是将游泳、自行车和跑步这三项运动结合起来而创造的一项新型的体育运动项目，是考验运动员体力和意志的运动项目。铁人三项比赛是选手之间速度的比拼，先抵达终点者即赢得比赛胜利。</p>
+        <p>铁人三项诞生于20世纪70年代的美国。 [1]1974年9月24日，世界首届铁人三项比赛在加利福尼亚州圣地亚哥举行。1994年，被国际奥委会列为奥运会比赛项目。2000年，铁人三项在悉尼奥运会上首次亮相。之后，铁人三项运动被青年奥运会、友好运动会、英联邦运动会、泛美运动会、世界军体大会、亚运会、亚洲沙滩运动会等相继列为正式比赛项目。铁人三项运动20世纪80年代传入中国后得到了迅速发展，20世纪80年代后期，各类铁人三项比赛开始相继在中国一些城市举办。截至2024年2月，中国铁人三项运动协会注册团体会员300余个，注册个人会员42000余人。</p>
+        <p>铁人三项的最高组织机构为国际铁人三项联盟，成立于1989年，总部设在加拿大温哥华。中国的铁人三项的最高组织机构为中国铁人三项运动协会，成立于1990年，总部设在北京。</p>
+        <img src="https://img2.baidu.com/it/u=4011307780,3495052992&fm=253&fmt=auto&app=138&f=JPEG?w=1067&h=800" alt="铁人三项">
+      </div>
+    </div>
+  </div>
+
+  <!-- 第五页：自行车维护 -->
+  <div class="page" id="page-10">
+    <div class="container">
+      <h1>自行车的维护</h1>
+      <div>
+        <h3>定期清洁</h3>
+        <p>保持链条和车架清洁，防止锈蚀。</p>
+        <img src="https://img95.699pic.com/xsj/0y/w2/n7.jpg%21/fw/700/watermark/url/L3hzai93YXRlcl9kZXRhaWwyLnBuZw/align/southeast" alt="自行车清洁">
+      </div>
+    </div>
+  </div>
+  <div class="page" id="page-11">
+    <div class="container">
+      <div>
+        <h3>检查刹车和轮胎</h3>
+        <p>定期检查刹车系统和轮胎压力，确保安全。</p>
+        <img src="https://img1.baidu.com/it/u=993134773,1031637364&fm=253&fmt=auto?w=753&h=500" alt="检查轮胎">
+      </div>
+    </div>
+  </div>
+  <div class="page" id="page-12">
+    <div class="container">
+      <div>
+        <h3>润滑链条</h3>
+        <p>定期润滑链条，减少磨损，提高骑行效率。</p>
+        <img src="https://5b0988e595225.cdn.sohucs.com/images/20171213/a6c042d2405541eaae3d98a371aa12fb.jpeg" alt="链条润滑">
+      </div>
+    </div>
+  </div>
+  <div class="page" id="page-13">
+    <div class="container">
+        <h1>谢谢观看</h1>
+        <p>制作：杨镇源，张隽熙</p>
+        <p>©anghenuan,ZJX</p>
+    </div>
+</div>
+  <!-- 页面导航按钮 -->
+  <div class="nav-buttons">
+    <button id="prev" disabled>上一页</button>
+    <button id="next">下一页</button>
+  </div>
+
+  <script>
+    const pages = document.querySelectorAll('.page');
+    const prevButton = document.getElementById('prev');
+    const nextButton = document.getElementById('next');
+    let currentPage = 0;
+
+    function updatePages() {
+      pages.forEach((page, index) => {
+        page.classList.toggle('active', index === currentPage);
+      });
+      prevButton.disabled = currentPage === 0;
+      nextButton.disabled = currentPage === pages.length - 1;
+    }
+
+    prevButton.addEventListener('click', () => {
+      if (currentPage > 0) currentPage--;
+      updatePages();
+    });
+
+    nextButton.addEventListener('click', () => {
+      if (currentPage < pages.length - 1) currentPage++;
+      updatePages();
+    });
+
+    updatePages();
+  </script>
+</body>
+</html>
